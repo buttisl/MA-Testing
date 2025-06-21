@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="SMOKE" parallel="tests" thread-count="3" verbose="10">
+
+    <test name="Búsqueda Correcta">
+        <classes>
+            <class name="Test.BuscadorTest"/>
+        </classes>
+    </test>
+
+    <test name="Noticia Correcta">
+        <classes>
+            <class name="Test.NoticiaTest"/>
+        </classes>
+    </test>
+
+    <test name="Red Social Correcta">
+        <classes>
+            <class name="Test.RedesTest"/>
+        </classes>
+    </test>
+
+</suite>

@@ -1,26 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite thread-count="3" parallel="tests" name="Failed suite [SMOKE]" guice-stage="DEVELOPMENT" verbose="10">
-  <test thread-count="3" parallel="tests" name="Red Social Correcta(failed)" verbose="10">
+  <test thread-count="3" parallel="tests" name="Flujo Completo de Navegación(failed)" verbose="10">
     <classes>
-      <class name="Test.RedesTest">
+      <class name="Test.FlujoNavegacionTest">
         <methods>
-          <include name="goToRedes"/>
+          <include name="flujoCompleto"/>
           <include name="SetUp"/>
           <include name="tearDown"/>
         </methods>
-      </class> <!-- Test.RedesTest -->
+      </class> <!-- Test.FlujoNavegacionTest -->
     </classes>
-  </test> <!-- Red Social Correcta(failed) -->
-  <test thread-count="3" parallel="tests" name="Noticia Correcta(failed)" verbose="10">
-    <classes>
-      <class name="Test.NoticiaTest">
-        <methods>
-          <include name="goToNotica"/>
-          <include name="SetUp"/>
-          <include name="tearDown"/>
-        </methods>
-      </class> <!-- Test.NoticiaTest -->
-    </classes>
-  </test> <!-- Noticia Correcta(failed) -->
+  </test> <!-- Flujo Completo de Navegación(failed) -->
 </suite> <!-- Failed suite [SMOKE] -->

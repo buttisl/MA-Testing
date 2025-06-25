@@ -55,7 +55,7 @@
                 </li>
                 <li>
                   <a href="#" panel-name="testlist-SMOKE" class="navigator-link ">
-                    <span class="test-stats">3 tests</span>
+                    <span class="test-stats">1 test</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -92,7 +92,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">3 methods,   3 passed</span>
+                    <span class="method-stats">1 method,   1 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -103,17 +103,7 @@
                     <div class="method-list-content passed suite-SMOKE">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-SMOKE" title="Test.BuscadorTest" class="method navigator-link" hash-for-method="goToBuscador">goToBuscador</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-SMOKE" title="Test.NoticiaTest" class="method navigator-link" hash-for-method="goToNotica">goToNotica</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-SMOKE" title="Test.RedesTest" class="method navigator-link" hash-for-method="goToRedes">goToRedes</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-SMOKE" title="Test.FlujoNavegacionTest" class="method navigator-link" hash-for-method="flujoCompleto">flujoCompleto</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-SMOKE -->
@@ -131,44 +121,14 @@
           <div class="suite-SMOKE-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">Test.NoticiaTest</span>
+              <span class="class-name">Test.FlujoNavegacionTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="goToNotica">
-                  </a> <!-- goToNotica -->
-                  <span class="method-name">goToNotica</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-SMOKE-class-passed -->
-          <div class="suite-SMOKE-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">Test.BuscadorTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="goToBuscador">
-                  </a> <!-- goToBuscador -->
-                  <span class="method-name">goToBuscador</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-SMOKE-class-passed -->
-          <div class="suite-SMOKE-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">Test.RedesTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="goToRedes">
-                  </a> <!-- goToRedes -->
-                  <span class="method-name">goToRedes</span>
+                  <a name="flujoCompleto">
+                  </a> <!-- flujoCompleto -->
+                  <span class="method-name">flujoCompleto</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -183,21 +143,11 @@
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
 &lt;suite thread-count=&quot;3&quot; parallel=&quot;tests&quot; name=&quot;SMOKE&quot; guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;10&quot;&gt;
-  &lt;test thread-count=&quot;3&quot; parallel=&quot;tests&quot; name=&quot;Búsqueda Correcta&quot; verbose=&quot;10&quot;&gt;
+  &lt;test thread-count=&quot;3&quot; parallel=&quot;tests&quot; name=&quot;Flujo Completo de Navegación&quot; verbose=&quot;10&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;Test.BuscadorTest&quot;/&gt;
+      &lt;class name=&quot;Test.FlujoNavegacionTest&quot;/&gt;
     &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- Búsqueda Correcta --&gt;
-  &lt;test thread-count=&quot;3&quot; parallel=&quot;tests&quot; name=&quot;Noticia Correcta&quot; verbose=&quot;10&quot;&gt;
-    &lt;classes&gt;
-      &lt;class name=&quot;Test.NoticiaTest&quot;/&gt;
-    &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- Noticia Correcta --&gt;
-  &lt;test thread-count=&quot;3&quot; parallel=&quot;tests&quot; name=&quot;Red Social Correcta&quot; verbose=&quot;10&quot;&gt;
-    &lt;classes&gt;
-      &lt;class name=&quot;Test.RedesTest&quot;/&gt;
-    &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- Red Social Correcta --&gt;
+  &lt;/test&gt; &lt;!-- Flujo Completo de Navegación --&gt;
 &lt;/suite&gt; &lt;!-- SMOKE --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -209,13 +159,7 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Búsqueda Correcta (1 class)</span>
-              </li>
-              <li>
-                <span class="test-name">Noticia Correcta (1 class)</span>
-              </li>
-              <li>
-                <span class="test-name">Red Social Correcta (1 class)</span>
+                <span class="test-name">Flujo Completo de Navegación (1 class)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -241,24 +185,16 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(3);
+data.addRows(1);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'goToRedes')
-data.setCell(0, 2, 'Test.RedesTest')
-data.setCell(0, 3, 7649);
-data.setCell(1, 0, 1)
-data.setCell(1, 1, 'goToNotica')
-data.setCell(1, 2, 'Test.NoticiaTest')
-data.setCell(1, 3, 4958);
-data.setCell(2, 0, 2)
-data.setCell(2, 1, 'goToBuscador')
-data.setCell(2, 2, 'Test.BuscadorTest')
-data.setCell(2, 3, 3916);
+data.setCell(0, 1, 'flujoCompleto')
+data.setCell(0, 2, 'Test.FlujoNavegacionTest')
+data.setCell(0, 3, 19084);
 window.suiteTableData['SMOKE']= { tableData: data, tableDiv: 'times-div-SMOKE'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 12 seconds</span>
+              <span class="suite-total-time">Total running time: 23 seconds</span>
               <div id="times-div-SMOKE">
               </div> <!-- times-div-SMOKE -->
             </div> <!-- times-div -->
@@ -284,63 +220,18 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">Test.BuscadorTest</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">Test.FlujoNavegacionTest</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">SetUp</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-test before -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">Test.NoticiaTest</div> <!-- chronological-class-name -->
-              <div class="configuration-test before">
-                <span class="method-name">SetUp</span>
-                <span class="method-start">1 ms</span>
-              </div> <!-- configuration-test before -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">Test.RedesTest</div> <!-- chronological-class-name -->
-              <div class="configuration-test before">
-                <span class="method-name">SetUp</span>
-                <span class="method-start">1 ms</span>
-              </div> <!-- configuration-test before -->
               <div class="test-method">
-                <span class="method-name">goToRedes</span>
-                <span class="method-start">4189 ms</span>
+                <span class="method-name">flujoCompleto</span>
+                <span class="method-start">4447 ms</span>
               </div> <!-- test-method -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">Test.BuscadorTest</div> <!-- chronological-class-name -->
-              <div class="test-method">
-                <span class="method-name">goToBuscador</span>
-                <span class="method-start">4373 ms</span>
-              </div> <!-- test-method -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">Test.NoticiaTest</div> <!-- chronological-class-name -->
-              <div class="test-method">
-                <span class="method-name">goToNotica</span>
-                <span class="method-start">4519 ms</span>
-              </div> <!-- test-method -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">Test.BuscadorTest</div> <!-- chronological-class-name -->
               <div class="configuration-test after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">8298 ms</span>
-              </div> <!-- configuration-test after -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">Test.NoticiaTest</div> <!-- chronological-class-name -->
-              <div class="configuration-test after">
-                <span class="method-name">tearDown</span>
-                <span class="method-start">9478 ms</span>
-              </div> <!-- configuration-test after -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">Test.RedesTest</div> <!-- chronological-class-name -->
-              <div class="configuration-test after">
-                <span class="method-name">tearDown</span>
-                <span class="method-start">11838 ms</span>
+                <span class="method-start">23534 ms</span>
               </div> <!-- configuration-test after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

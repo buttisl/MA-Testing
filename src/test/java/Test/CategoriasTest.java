@@ -10,9 +10,5 @@ public class CategoriasTest extends BaseTest {
     public void goToCategoria(){
         CategoriasPage categoriasPage = new CategoriasPage(GetDriver(),GetWait());
         categoriasPage.goToCategorias("Institucionales");
-
-        String currentUrl = GetDriver().getCurrentUrl();
-        Assert.assertTrue(currentUrl.toLowerCase().contains("institucionales"),
-                "La URL no contiene 'institucionales': " + currentUrl);
     }
 }

@@ -2,22 +2,9 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="SMOKE" parallel="tests" thread-count="3" verbose="10">
 
-    <test name="Búsqueda Correcta">
+    <test name="Flujo Completo de Navegación">
         <classes>
-            <class name="Test.BuscadorTest"/>
+            <class name="Test.FlujoNavegacionTest"/>
         </classes>
     </test>
-
-    <test name="Noticia Correcta">
-        <classes>
-            <class name="Test.NoticiaTest"/>
-        </classes>
-    </test>
-
-    <test name="Red Social Correcta">
-        <classes>
-            <class name="Test.RedesTest"/>
-        </classes>
-    </test>
-
 </suite>

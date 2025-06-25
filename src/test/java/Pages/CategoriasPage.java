@@ -5,6 +5,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.Assert;
 
 public class CategoriasPage {
 
@@ -22,5 +23,9 @@ public class CategoriasPage {
         String xpath = "//a[@href and normalize-space()='" + categoria + "']";
         wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(xpath))).click();
         wait.until(ExpectedConditions.urlContains(categoria.toLowerCase()));
+
+        String currentUrl = driver.getCurrentUrl();
+        Assert.assertTrue(currentUrl.toLowerCase().contains("institucionales"),
+                "La URL no contiene 'institucionales': " + currentUrl);
     }
 }
